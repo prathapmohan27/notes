@@ -1,0 +1,11 @@
+<div class="cardContainer">
+
+  <div *ngFor="let note of notes">
+    <h1>{{ note.tittle}}</h1>
+    <span>{{ note.date }}</span>
+    <p>{{ note.description }}</p>
+    <button class="delete" (click)="remove(note)">delete</button>
+    <button class="edit" (click)="sendObj(note)">edit</button>
+  </div>
+  
+</div>

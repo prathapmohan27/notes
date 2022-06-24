@@ -1,0 +1,17 @@
+div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem; ;
+    border: 1px solid white;
+    h1{
+        margin: 0;
+        padding: 0;
+    }
+
+    button{
+        cursor: pointer;
+        border: none;
+        background-color: aqua;
+    }
+}

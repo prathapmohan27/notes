@@ -1,0 +1,11 @@
+<form [formGroup]="form">
+  <div class="form-field">
+    <input name="email" formControlName="email" placeholder="Email" />
+  </div>
+  <div class="form-field">
+    <input name="password" formControlName="password" type="password" placeholder="password"/>
+  </div>
+  <div class="form-buttons">
+    <button class="button button-primary" (click)="login()">Login</button>
+  </div>
+</form>

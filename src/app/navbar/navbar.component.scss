@@ -1,0 +1,17 @@
+nav{
+    display: flex;
+    padding: 1rem;
+    justify-content: space-around;
+    border-bottom: 1px solid white;
+    h2{
+        padding: 0;
+        margin: 0;
+        font-size: 1.5rem;
+    }
+    a{
+        color: inherit;
+        margin-left: 1rem;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+}

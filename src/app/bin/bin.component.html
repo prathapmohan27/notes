@@ -1,0 +1,8 @@
+<h1>Bin</h1>
+<div>
+    <app-bin-card [binNotes]="notes"></app-bin-card>
+</div>
+
+<div *ngIf="notes.length>0" class="buttonContainer">
+    <button (click)="clear()">Clear</button>
+</div>

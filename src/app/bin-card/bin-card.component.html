@@ -1,0 +1,5 @@
+<div *ngFor="let note of binNotes">
+    <h1>{{ note.tittle}}</h1>
+    <span>{{ note.date }}</span>
+    <button (click)="restore(note)">Restore</button>
+</div>

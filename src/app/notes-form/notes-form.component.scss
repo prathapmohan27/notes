@@ -1,0 +1,46 @@
+h1{
+    text-align: center;
+}
+
+form{
+    width: 40%;
+    padding: 2rem;
+    border: 1px solid white;
+    margin: 2rem;  
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    div{
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;
+        input{
+            width: 100%;
+            outline: none;
+            background-color: rgb(83, 81, 79);
+            color: white;
+            border: none;
+            margin: .5rem;
+            height: 2rem;
+        }
+    }
+
+    textarea{
+        width: 100%;
+        background-color: rgb(83, 81, 79);
+        color: white;
+    }
+
+    button{
+        background-color: rgb(6, 204, 178);
+        font-size: 1.2rem;
+        border: none;
+        padding: .5rem 1rem;
+        align-self: center;
+        cursor: pointer;
+    }
+  
+}

@@ -1,0 +1,19 @@
+<h1>Home</h1>
+
+<form [formGroup]="notesForm" (ngSubmit)="onSubmit()">
+  <div>
+    <input type="text" placeholder="Tittle" formControlName="tittle"/>
+    <input type="date" formControlName="date" />
+  </div>
+  <textarea
+    name=""
+    cols="30"
+    rows="10"
+    placeholder="Description"
+    formControlName="description"
+  ></textarea
+  ><br />
+  <button type="submit" [disabled]="notesForm.invalid">Done</button>
+</form>
+
+<app-card [notes]="notes" (editEvent)="receiveObj($event)"></app-card>
