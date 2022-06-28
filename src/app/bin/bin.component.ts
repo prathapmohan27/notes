@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from '../auth.service';
 import { DataService } from '../data.service';
 
 @Component({
@@ -9,7 +10,7 @@ import { DataService } from '../data.service';
 export class BinComponent implements OnInit {
 
   notes:any=[];
-  constructor(private dataService:DataService) { }
+  constructor(private dataService:DataService,private auth:AuthService) { }
 
   ngOnInit(): void {
     this.notes=this.dataService.getBinData();
@@ -19,4 +20,10 @@ export class BinComponent implements OnInit {
     this.notes=[];
     this.dataService.clear();
   }
+
+//   ngOnDestroy(): void {
+//     if(this.auth.getExpiration()){
+//       localStorage.removeItem('token');
+//     }  
+// }  
 }
